@@ -13,3 +13,4 @@ dist/
 # Temporary files and directories
 tmp/
 *.tmp
+.vercel

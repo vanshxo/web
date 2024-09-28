@@ -1,12 +1,12 @@
 const express = require('express');
 const path = require('path');
-const{connectDB}=require('./config/db')
+
 require('dotenv').config()
 
 
 const app = express();
 
-connectDB();
+
 // Serve static files from the 'frontend' directory
 app.use(express.static(path.join(__dirname, 'frontend')));
 app.use(express.static(path.join(__dirname,'uploads')))
